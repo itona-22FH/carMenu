@@ -80,6 +80,7 @@ export const CarModelSection = () => {
       p="5px"
       m="5px"
       boxShadow="md"
+      h="100%"
     >
       <Heading
         as="h3"
@@ -113,8 +114,9 @@ export const CarModelSection = () => {
         <SelectSearch />
         <SelectSearch />
       </Flex>
-
-      <ButtonSearch />
+      <Box>
+        <ButtonSearch />
+      </Box>
     </Box>
   );
 };

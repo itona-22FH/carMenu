@@ -33,7 +33,7 @@ export const CarMakerSection = () => {
       bg="#FFFFFF"
       m="5px"
       boxShadow="md"
-      h="300px"
+      h="100%"
     >
       <Box p="5px">
         <Heading
@@ -74,7 +74,6 @@ export const CarMakerSection = () => {
 
       <SelectSearch />
       <ButtonSearch />
-      
     </Box>
   );
 };
