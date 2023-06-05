@@ -80,7 +80,6 @@ export const CarModelSection = () => {
       p="5px"
       m="5px"
       boxShadow="md"
-      h="100%"
     >
       <Heading
         as="h3"
