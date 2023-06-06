@@ -13,8 +13,8 @@ import { Notice } from "./Notice";
 export const InformationSection = () => {
   return (
     <Flex mt="90px" justifyContent="center">
-      <Box transform={{base:"scale(0.7)" , md:"scale(1)", lg:"scale(1.3)"}}>
-        <Flex justifyContent="space-between" w="555px" alignItems="flex-end" >
+      <Box transform={{ base: "scale(0.7)", md: "scale(1)", lg: "scale(1.3)" }}>
+        <Flex justifyContent="space-between" w="555px" alignItems="flex-end">
           <Heading
             as="h3"
             size="md"
@@ -45,7 +45,7 @@ export const InformationSection = () => {
         </Flex>
         <Divider h="3px" w="100%" bg="#003657" mt="3px"></Divider>
         <VStack
-          divider={<StackDivider borderColor="red" h="10px" w="10px"/>}
+          divider={<StackDivider borderColor="red" h="10px" w="10px" />}
           spacing={4}
           align="stretch"
         >

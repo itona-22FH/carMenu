@@ -5,13 +5,7 @@ import { FreeWordForm } from "./FreeWordForm";
 
 export const FreeWordSearch = () => {
   return (
-    <Box
-      bg="#FFFFFF"
-      m="5px"
-      boxShadow="md"
-      h="100%"
-      mt="7px"
-    >
+    <Box bg="#FFFFFF" m="5px" boxShadow="md" h="100%" mt="7px">
       <Box p="5px">
         <Heading
           as="h3"

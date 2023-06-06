@@ -12,7 +12,7 @@ export const CarImage = ({ carData }: CarImageProps) => {
             <Image src={`/img/catalog/content/${car.image}.png`} />
             <Flex justifyContent="space-between" mt="2px">
               <Text fontSize="3px">{car.model}</Text>
-              <Checkbox colorScheme="green" size="md" border="1px #5E5E5E"/>
+              <Checkbox colorScheme="green" size="md" border="1px #5E5E5E" />
             </Flex>
           </Box>
         );
