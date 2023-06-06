@@ -7,6 +7,9 @@ import { CarCatalogSection } from "./components/CarCatalogSection";
 import { CarModelSection } from "./components/CarModelSection";
 import { CarMakerSection } from "./components/CarMakerSection";
 import { FreeWordSearch } from "./components/FreeWordSearch";
+import { InformationSection } from "./components/InformationSection";
+import { Footer } from "./components/Footer";
+import { Copylight } from "./components/Copylight";
 
 export default function Home() {
   return (
@@ -46,16 +49,25 @@ export default function Home() {
       </Flex>
 
       <Flex
-        justifyContent="space-evenly"
-        flexWrap={{ base: "wrap", sm: "wrap", lg: "nowrap" }}
+        justifyContent="space-around"
+        flexWrap={{ base: "wrap", sm: "wrap", md: "wrap", lg: "nowrap" }}
         mt="60px"
       >
         <CarModelSection />
-        <Flex flexDirection="column">
-        <CarMakerSection />
-        <FreeWordSearch />
+        <Flex
+          flexDirection="column"
+          w={{ base: "340px", md: "360px", lg: "600px" }}
+        >
+          <CarMakerSection />
+          <FreeWordSearch />
         </Flex>
       </Flex>
+
+      <InformationSection />
+
+      <Footer />
+
+      <Copylight />
     </>
   );
 }
