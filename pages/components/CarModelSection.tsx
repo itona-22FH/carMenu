@@ -72,6 +72,18 @@ export const CarModelSection = () => {
       name: "日産ルークス",
       model: "軽自動車",
     },
+    {
+      image: "car9",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car9",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
   ];
   return (
     <Box

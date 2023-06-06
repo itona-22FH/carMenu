@@ -26,15 +26,51 @@ export const CarMakerSection = () => {
       name: "日産ルークス",
       model: "軽自動車",
     },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
+    {
+      image: "car3",
+      maker: "nissan",
+      name: "日産ルークス",
+      model: "軽自動車",
+    },
   ];
   return (
-    <Box
-      w={{ base: "340px", md: "360px", lg: "600px" }}
-      bg="#FFFFFF"
-      m="5px"
-      boxShadow="md"
-
-    >
+    <Box bg="#FFFFFF" m="5px" boxShadow="md">
       <Box p="5px">
         <Heading
           as="h3"
@@ -53,7 +89,7 @@ export const CarMakerSection = () => {
         </Flex>
       </Box>
 
-      <Flex backgroundColor="#F5F5F5" w="100%">
+      <Flex backgroundColor="#F5F5F5" flexWrap="wrap" justifyContent="center">
         <CarImage carData={carData} />
       </Flex>
 
@@ -71,7 +107,6 @@ export const CarMakerSection = () => {
           オプション検索
         </Heading>
       </Flex>
-
       <SelectSearch />
       <ButtonSearch />
     </Box>
