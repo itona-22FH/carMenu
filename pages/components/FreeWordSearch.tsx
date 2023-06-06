@@ -6,7 +6,6 @@ import { FreeWordForm } from "./FreeWordForm";
 export const FreeWordSearch = () => {
   return (
     <Box
-      w={{ base: "340px", md: "360px", lg: "600px" }}
       bg="#FFFFFF"
       m="5px"
       boxShadow="md"
