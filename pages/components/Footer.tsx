@@ -17,11 +17,19 @@ import React from "react";
 import TestCarLogo from "../../public/tc-white-logo.svg";
 
 export const Footer = () => {
+  
+  const backToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <Box mt="100px">
-        <Image src="/img/icon/backToTop.png" />
-      </Box>
+      <Flex mt="100px" justifyContent="flex-end">
+        <Image src="/img/icon/backToTop.png" onClick={backToTop} />
+      </Flex>
       <Box bg="#51646C" p="10px">
         <Flex
           justifyContent="center"
