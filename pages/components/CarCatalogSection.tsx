@@ -1,71 +1,92 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import { Flex, Button, Box, Text, Image } from "@chakra-ui/react";
-import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import React, { useEffect, useState } from "react";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 // デフォルトのテーマ
 import "@splidejs/react-splide/css";
 
 // または、ほかのテーマ
 import "@splidejs/react-splide/css/skyblue";
-import "@splidejs/react-splide/css/sea-green";
 
 // あるいは、コアスタイルのみ
 import "@splidejs/react-splide/css/core";
 
 export const CarCatalogSection = () => {
-  const carCatalog = [
+  const [carCatalogState, setCarCatalogState] = useState<CarCatalog[]>([
     {
       image: "car1",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: true,
     },
     {
       image: "car2",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: false,
     },
     {
       image: "car3",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: false,
     },
     {
       image: "car4",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: true,
     },
     {
       image: "car5",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: false,
     },
     {
       image: "car1",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: false,
     },
     {
       image: "car2",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: true,
     },
     {
       image: "car3",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: false,
     },
     {
       image: "car4",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: true,
     },
     {
       image: "car5",
       maker: "Mazda",
       name: "CX-5 XD(4WD)",
+      bookmark: false,
     },
-  ];
+  ]);
+
+  const handleBookmark = (index: number) => {
+    const newCarCatalog = carCatalogState.map((car, i) => {
+      if (i === index) {
+        car.bookmark = !car.bookmark;
+        return car;
+      } else {
+        return car;
+      }
+    });
+    setCarCatalogState(newCarCatalog);
+  };
 
   return (
     <Box w="100%">
@@ -80,10 +101,10 @@ export const CarCatalogSection = () => {
           autoplay: true,
           rewind: true,
         }}
-        aria-label="お気に入りの写真"
+        aria-label="新型車"
         style={{ padding: 0, marginTop: 40 }}
       >
-        {carCatalog.map((car) => {
+        {carCatalogState.map((car, index) => {
           return (
             <SplideSlide style={{ margin: "10px" }}>
               <Flex
@@ -103,6 +124,7 @@ export const CarCatalogSection = () => {
                     <Text fontSize="1px">{car.maker}</Text>
                     <Text fontSize="1px">{car.name}</Text>
                   </Flex>
+
                   <Button
                     borderRadius=""
                     p="5px"
@@ -110,14 +132,23 @@ export const CarCatalogSection = () => {
                     w=""
                     h=""
                     bg="white"
-                    boxShadow="md"
+                    boxShadow={car.bookmark ? "" : "md"}
                     fontWeight="normal"
+                    onClick={() => handleBookmark(index)}
                   >
-                    <Text fontSize="1px">
-                      お気に入りに<br></br>追加
-                    </Text>
+                    {car.bookmark ? (
+                      <Text fontSize="1px">
+                        お気に入り<br></br>解除
+                      </Text>
+                    ) : (
+                      <Text fontSize="1px">
+                        お気に入りに<br></br>追加
+                      </Text>
+                    )}
                     <Image
-                      src="/img/icon/pinUnCheck.png"
+                      src={`/img/icon/${
+                        car.bookmark ? "pinCheck" : "pinUnCheck"
+                      }.png`}
                       w="25px"
                       ml="10px"
                     ></Image>
