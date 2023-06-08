@@ -1,10 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import {
-  Box,
-  Flex,
-  Heading,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import { CarImage } from "./CarImage";
 import { SelectSearch } from "./SelectSearch";
@@ -22,72 +17,60 @@ export const CarModelSection = () => {
       image: "car2",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "コンパクトカー",
     },
     {
       image: "car3",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "ミニバン",
     },
     {
       image: "car4",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "セダン",
     },
     {
       image: "car5",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "クーペ",
     },
 
     {
       image: "car6",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "ステーションワゴン",
     },
 
     {
       image: "car7",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "SUB・クロカン",
     },
 
     {
       image: "car8",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
+      model: "オープンカー",
     },
 
     {
       image: "car9",
       maker: "nissan",
       name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car9",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car9",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
+      model: "ワンボックス",
     },
   ];
   return (
     <Box
       w={{ base: "340px", md: "360px", lg: "600px" }}
       bg="#F5F5F5"
-      p="5px"
+      p="2px"
       m="5px"
       boxShadow="md"
     >

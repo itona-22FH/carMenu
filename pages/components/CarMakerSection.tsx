@@ -10,62 +10,20 @@ export const CarMakerSection = () => {
   const carData: Car[] = [
     {
       image: "car1",
-      maker: "nissan",
-      name: "日産ルークス",
+      maker: "日産",
+      name: "デイズ　ルークス",
       model: "軽自動車",
     },
     {
       image: "car2",
       maker: "nissan",
-      name: "日産ルークス",
+      name: "デイズ",
       model: "軽自動車",
     },
     {
       image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
-      model: "軽自動車",
-    },
-    {
-      image: "car3",
-      maker: "nissan",
-      name: "日産ルークス",
+      maker: "日産",
+      name: "クリッパー",
       model: "軽自動車",
     },
   ];

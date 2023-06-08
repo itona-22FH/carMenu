@@ -8,10 +8,10 @@ export const CarImage = ({ carData }: CarImageProps) => {
     <>
       {carData.map((car) => {
         return (
-          <Box w="105px" m="5px" mt="10px">
+          <Box w="106px" m="5px" mt="10px">
             <Image src={`/img/catalog/content/${car.image}.png`} />
             <Flex justifyContent="space-between" mt="2px">
-              <Text fontSize="3px">{car.model}</Text>
+              <Text fontSize="1px">{car.model}</Text>
               <Checkbox colorScheme="green" size="md" border="1px #5E5E5E" />
             </Flex>
           </Box>

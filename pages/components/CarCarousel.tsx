@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -56,16 +56,15 @@ export const CarCarousel = () => {
                 width="800px"
                 alt={"carImage"}
               />
-              <p
+              <Text
                 className="legend"
-                style={{
-                  marginBottom: "50px",
-                  backgroundColor: "white",
-                  color: "black",
-                }}
+                mb={{ base: "50px", md: "150px", lg: "400px" }}
+                style={{ backgroundColor: "transparent", color: "black", }}
+                fontWeight="bold"
+                
               >
                 {carImage.text}
-              </p>
+              </Text>
             </Box>
           );
         })}

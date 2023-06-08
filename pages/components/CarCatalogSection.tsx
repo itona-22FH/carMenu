@@ -16,62 +16,62 @@ export const CarCatalogSection = () => {
   const [carCatalogState, setCarCatalogState] = useState<CarCatalog[]>([
     {
       image: "car1",
-      maker: "Mazda",
+      maker: "マツダ",
       name: "CX-5 XD(4WD)",
       bookmark: true,
     },
     {
       image: "car2",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "トヨタ",
+      name: "アルファードハイブリッド",
       bookmark: false,
     },
     {
       image: "car3",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "トヨタ",
+      name: "ハリアー プレミアム",
       bookmark: false,
     },
     {
       image: "car4",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "トヨタ",
+      name: "ハイラックスサーフ",
       bookmark: true,
     },
     {
       image: "car5",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "ホンダ",
+      name: "シティ",
       bookmark: false,
     },
     {
       image: "car1",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
-      bookmark: false,
-    },
-    {
-      image: "car2",
-      maker: "Mazda",
+      maker: "マツダ",
       name: "CX-5 XD(4WD)",
       bookmark: true,
     },
     {
+      image: "car2",
+      maker: "トヨタ",
+      name: "アルファードハイブリッド",
+      bookmark: false,
+    },
+    {
       image: "car3",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "トヨタ",
+      name: "ハリアー プレミアム",
       bookmark: false,
     },
     {
       image: "car4",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "トヨタ",
+      name: "ハイラックスサーフ",
       bookmark: true,
     },
     {
       image: "car5",
-      maker: "Mazda",
-      name: "CX-5 XD(4WD)",
+      maker: "ホンダ",
+      name: "シティ",
       bookmark: false,
     },
   ]);
@@ -108,7 +108,7 @@ export const CarCatalogSection = () => {
           return (
             <SplideSlide style={{ margin: "10px" }}>
               <Flex
-                w="200px"
+                w="210px"
                 boxShadow="md"
                 p="3px"
                 h="200px"
