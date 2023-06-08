@@ -2,10 +2,8 @@
 import {
   Box,
   Flex,
-  CheckboxGroup,
   Heading,
   Image,
-  Button,
 } from "@chakra-ui/react";
 import React from "react";
 import { CarImage } from "./CarImage";

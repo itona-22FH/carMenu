@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Text } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 
 export const MenuItem = ({ menuItem }: MenuItemProps) => {
   return (

@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import { Flex, Button, Box, Text, Image } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import React, { useState } from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 // デフォルトのテーマ
 import "@splidejs/react-splide/css";
 
