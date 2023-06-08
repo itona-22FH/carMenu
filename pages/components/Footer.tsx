@@ -1,23 +1,18 @@
 /* eslint-disable jsx-a11y/alt-text */
 import {
   Box,
-  Button,
   Link,
   Image,
   Flex,
   Text,
   Divider,
-  List,
   ListItem,
-  ListIcon,
-  OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
 import React from "react";
 import TestCarLogo from "../../public/tc-white-logo.svg";
 
 export const Footer = () => {
-  
   const backToTop = () => {
     window.scrollTo({
       top: 0,
@@ -37,7 +32,8 @@ export const Footer = () => {
         >
           <Flex
             flexDirection="column"
-            mr={{ base: "50px", md: "50px", lg: "60px" }}
+            mr={{ base: "15px", md: "50px", lg: "60px" }}
+            mt={{base:"5px"}}
           >
             <Box w={{ base: "100px", md: "180px", lg: "230px" }}>
               <TestCarLogo />
@@ -50,7 +46,7 @@ export const Footer = () => {
           <Divider
             orientation="vertical"
             w="5px"
-            h={{ base: "80px", md: "130px", lg: "170px" }}
+            h={{ base: "125px", md: "130px", lg: "170px" }}
             bg="#27566B"
             border="0"
           />
@@ -58,10 +54,11 @@ export const Footer = () => {
           <Flex
             alignItems="center"
             ml="10px"
-            mt={{ base: "35px", md: "60px", lg: "80px" }}
+            mt={{ base: "", md: "60px", lg: "80px" }}
             fontSize={{ base: "1px", md: "15px", lg: "20px" }}
+            flexWrap={{base:"wrap"}}
           >
-            <UnorderedList styleType="none">
+            <UnorderedList styleType="none" ml="5px">
               <ListItem>
                 <Link>試乗車検索</Link>
               </ListItem>
@@ -72,7 +69,7 @@ export const Footer = () => {
                 <Link>お知らせ</Link>
               </ListItem>
             </UnorderedList>
-            <UnorderedList styleType="none" ml={{ base: "10px" }}>
+            <UnorderedList styleType="none" ml={{ base: "5px", sm:"10px", md:"10px", lg:"10px" }}>
               <ListItem>
                 <Link>サービスについて</Link>
               </ListItem>
