@@ -108,7 +108,7 @@ export const CarCatalogSection = () => {
           return (
             <SplideSlide style={{ margin: "10px" }}>
               <Flex
-                w="210px"
+                w="230px"
                 boxShadow="md"
                 p="3px"
                 h="200px"
@@ -120,9 +120,9 @@ export const CarCatalogSection = () => {
                   h="110px"
                 />
                 <Flex justifyContent="space-between">
-                  <Flex flexDirection="column">
+                  <Flex flexDirection="column" w="110px">
                     <Text fontSize="1px">{car.maker}</Text>
-                    <Text fontSize="1px">{car.name}</Text>
+                    <Text fontSize="1px" textOverflow="ellipsis" whiteSpace="nowrap" overflow="hidden">{car.name}</Text>
                   </Flex>
 
                   <Button
