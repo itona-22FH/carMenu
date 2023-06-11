@@ -61,7 +61,7 @@ export const CarCarousel = () => {
                 mb={{ base: "50px", md: "150px", lg: "400px" }}
                 style={{ backgroundColor: "transparent", color: "black", }}
                 fontWeight="bold"
-                
+
               >
                 {carImage.text}
               </Text>
