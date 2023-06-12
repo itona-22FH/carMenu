@@ -5,6 +5,7 @@ import React from "react";
 import { SelectSearch } from "./SelectSearch";
 import { CarImage } from "./CarImage";
 import { ButtonSearch } from "./ButtonSearch";
+import { ToggleButton } from "./ToggleButton";
 
 export const CarMakerSection = () => {
   const carData: Car[] = [
@@ -42,8 +43,8 @@ export const CarMakerSection = () => {
         </Heading>
 
         <Flex mt="10px">
-          <SelectSearch />
-          <SelectSearch />
+          <SelectSearch searchWord={"メーカー"} bgImage={"path.png"} />
+          <SelectSearch searchWord={"車種"} bgImage={"path.png"} />
         </Flex>
       </Box>
 
@@ -65,7 +66,8 @@ export const CarMakerSection = () => {
           オプション検索
         </Heading>
       </Flex>
-      <SelectSearch />
+      <SelectSearch searchWord={"排気量"} bgImage={"path.png"} />
+      <ToggleButton id="makerToggle" />
       <ButtonSearch />
     </Box>
   );

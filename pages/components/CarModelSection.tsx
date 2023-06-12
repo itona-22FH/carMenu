@@ -4,6 +4,7 @@ import React from "react";
 import { CarImage } from "./CarImage";
 import { SelectSearch } from "./SelectSearch";
 import { ButtonSearch } from "./ButtonSearch";
+import { ToggleButton } from "./ToggleButton";
 
 export const CarModelSection = () => {
   const carData: Car[] = [
@@ -103,9 +104,10 @@ export const CarModelSection = () => {
       </Flex>
 
       <Flex mt="10px">
-        <SelectSearch />
-        <SelectSearch />
+        <SelectSearch searchWord={"メーカー"} bgImage={"path.png"} />
+        <SelectSearch searchWord={"排気量"} bgImage={"path.png"} />
       </Flex>
+      <ToggleButton id="modelToggle" />
       <Box>
         <ButtonSearch />
       </Box>
