@@ -1,11 +1,11 @@
 import { Flex, Select, Text } from "@chakra-ui/react";
 import React from "react";
 
-export const SelectSearch = () => {
+export const SelectSearch = ({ searchWord, bgImage }: SelectSearchProps) => {
   return (
     <Flex alignItems="center" ml="5px">
-      <Text fontSize="1px" pt="2px">
-        メーカー
+      <Text fontSize="1px" pt="2px" mr="3px">
+        {searchWord}
       </Text>
       <Select
         w="100px"
@@ -16,7 +16,7 @@ export const SelectSearch = () => {
         appearance="none"
         p="0"
         iconSize="0"
-        backgroundImage="/img/icon/path.png"
+        backgroundImage={`/img/icon/${bgImage}`}
         backgroundRepeat="no-repeat"
         backgroundSize="30%"
         backgroundPosition="right 25%"
