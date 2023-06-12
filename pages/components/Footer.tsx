@@ -33,7 +33,7 @@ export const Footer = () => {
           <Flex
             flexDirection="column"
             mr={{ base: "15px", md: "50px", lg: "60px" }}
-            mt={{base:"5px"}}
+            mt={{ base: "5px" }}
           >
             <Box w={{ base: "100px", md: "180px", lg: "230px" }}>
               <TestCarLogo />
@@ -56,7 +56,7 @@ export const Footer = () => {
             ml="10px"
             mt={{ base: "", md: "60px", lg: "80px" }}
             fontSize={{ base: "1px", md: "15px", lg: "20px" }}
-            flexWrap={{base:"wrap"}}
+            flexWrap={{ base: "wrap" }}
           >
             <UnorderedList styleType="none" ml="5px">
               <ListItem>
@@ -69,7 +69,10 @@ export const Footer = () => {
                 <Link>お知らせ</Link>
               </ListItem>
             </UnorderedList>
-            <UnorderedList styleType="none" ml={{ base: "5px", sm:"10px", md:"10px", lg:"10px" }}>
+            <UnorderedList
+              styleType="none"
+              ml={{ base: "5px", sm: "10px", md: "10px", lg: "10px" }}
+            >
               <ListItem>
                 <Link>サービスについて</Link>
               </ListItem>
