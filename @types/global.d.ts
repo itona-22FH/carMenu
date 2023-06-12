@@ -19,3 +19,12 @@ type Car = {
 type CarImageProps = {
   carData: Car[]
 }
+
+type ToggleButtonProps = {
+  id: string;
+}
+
+type SelectSearchProps = {
+  searchWord: string;
+  bgImage: string;
+}
