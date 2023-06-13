@@ -46,6 +46,7 @@ export const CarCarousel = () => {
         autoPlay={true}
         showStatus={false}
         showArrows={false}
+
       >
         {SlideData.map((carImage) => {
           return (

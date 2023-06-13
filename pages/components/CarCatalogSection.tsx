@@ -125,9 +125,10 @@ export const CarCatalogSection = () => {
               trimSpace: false,
               autoplay: true,
               rewind: true,
+              
             }}
             aria-label="新型車"
-            style={{ padding: 0, marginTop: 40 }}
+            style={{ padding: 0, marginTop: 40, }}
           >
             {carCatalogState.map((car, index) => {
               return (
