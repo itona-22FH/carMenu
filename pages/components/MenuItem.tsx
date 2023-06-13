@@ -5,8 +5,9 @@ export const MenuItem = ({ menuItem }: MenuItemProps) => {
   return (
     <Link
       href="/"
-      fontSize={{ base: "0.5em", md: "20px", lg: "25px" }}
-      ml={{ base: "10px", lg: "20px" }}
+      fontSize={{ base: "0.5em", md: "15px", lg: "25px" }}
+      ml={{ base: "30px", lg: "30px" }}
+      mb={{base:"10px"}}
       color="white"
     >
       {menuItem}

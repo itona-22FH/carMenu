@@ -86,7 +86,7 @@ export const CarModelSection = () => {
         車種から探す
       </Heading>
       <Flex flexWrap="wrap" justifyContent="center">
-        <CarImage carData={carData} />
+        <CarImage carData={carData} category="model" />
       </Flex>
       <Flex alignItems="center" mt="10px">
         <Image src="img/icon/delimiter.png" w="3px" h="23px" display="block" />
@@ -104,10 +104,22 @@ export const CarModelSection = () => {
       </Flex>
 
       <Flex mt="10px">
-        <SelectSearch searchWord={"メーカー"} bgImage={"path.png"} />
-        <SelectSearch searchWord={"排気量"} bgImage={"path.png"} />
+        <SelectSearch
+          searchWord={"メーカー"}
+          bgImage={"path.png"}
+          optionValues={["トヨタ", "ホンダ", "スズキ", "マツダ"]}
+          bgFilter=""
+          textColor="black"
+        />
+        <SelectSearch
+          searchWord={"排気量"}
+          bgImage={"path.png"}
+          optionValues={["100cc", "200cc", "300cc", "400cc"]}
+          bgFilter=""
+          textColor="black"
+        />
       </Flex>
-      <ToggleButton id="modelToggle" />
+      <ToggleButton id="modelToggle" bgColor="#6599BE" labelColor="black" />
       <Box>
         <ButtonSearch />
       </Box>

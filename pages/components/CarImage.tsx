@@ -3,7 +3,8 @@
 import { Box, Image, Checkbox, Text, Flex } from "@chakra-ui/react";
 import React from "react";
 
-export const CarImage = ({ carData }: CarImageProps) => {
+export const CarImage = ({ carData, category }: CarImageProps) => {
+
   return (
     <>
       {carData.map((car) => {
@@ -11,7 +12,7 @@ export const CarImage = ({ carData }: CarImageProps) => {
           <Box w="106px" m="5px" mt="10px">
             <Image src={`/img/catalog/content/${car.image}.png`} />
             <Flex justifyContent="space-between" mt="2px">
-              <Text fontSize="1px">{car.model}</Text>
+              <Text fontSize="1px">{category === "model" ? car.model: car.name}</Text>
               <Checkbox colorScheme="green" size="md" border="1px #5E5E5E" />
             </Flex>
           </Box>
