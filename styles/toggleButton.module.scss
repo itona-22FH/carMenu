@@ -4,9 +4,9 @@ $gray: gray;
 
 .checkbox {
   width: 120px;
-  height: 24px;
+  height: 20px;
   background-color: $white;
-  border-radius: 9px;
+  border-radius: 5px;
   position: relative;
   overflow: hidden;
   border: solid 1px $gray;
@@ -16,11 +16,10 @@ $gray: gray;
     width: 60px;
     height: 100%;
     position: absolute;
-    border-radius: 8px;
+    border-radius: 3px;
     left: 0;
     bottom: 0;
     cursor: pointer;
-    background: #5d98bc;
     transition: 0.4s;
   }
 
