@@ -6,8 +6,8 @@ type CarCatalog = {
   name: string;
   maker: string;
   image: string;
-  bookmark: boolean
-}
+  bookmark: boolean;
+};
 
 type Car = {
   name: string;
@@ -17,14 +17,20 @@ type Car = {
 };
 
 type CarImageProps = {
-  carData: Car[]
-}
+  carData: Car[];
+  category: string
+};
 
 type ToggleButtonProps = {
+  bgColor: string;
   id: string;
-}
+  labelColor: string
+};
 
 type SelectSearchProps = {
   searchWord: string;
   bgImage: string;
-}
+  optionValues: string[];
+  bgFilter: string;
+  textColor: string;
+};
