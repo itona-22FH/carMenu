@@ -13,7 +13,14 @@ import { Notice } from "./Notice";
 export const InformationSection = () => {
   return (
     <Flex mt="90px" justifyContent="center">
-      <Box transform={{ base: "scale(0.5)", md: "scale(1)", lg: "scale(1.3)" }}>
+      <Box
+        transform={{
+          base: "scale(0.5)",
+          sm: "scale(0.8)",
+          md: "scale(1)",
+          lg: "scale(1.3)",
+        }}
+      >
         <Flex justifyContent="space-between" w="555px" alignItems="flex-end">
           <Heading
             as="h3"
