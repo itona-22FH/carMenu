@@ -1,16 +1,16 @@
-$black: black;
-$white: white;
-$gray: gray;
+$bgColor: white;
+$fontColor: gray;
+$borderColor: gray;
 
 .checkbox {
   width: 120px;
   height: 20px;
-  background-color: $white;
+  background-color: $bgColor;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  border: solid 1px $gray;
-  color: $gray;
+  border: solid 1px $borderColor;
+  color: $fontColor;
 
   .toggle {
     width: 60px;
@@ -39,3 +39,4 @@ $gray: gray;
 .check:checked + .checkbox .slide .toggle {
   transform: translateX(100%);
 }
+
