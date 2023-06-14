@@ -8,9 +8,9 @@ import {
   StackDivider,
 } from "@chakra-ui/react";
 import React from "react";
-import { Notice } from "./Notice";
+import { News } from "./News";
 
-export const InformationSection = () => {
+export const NewsSection = () => {
   return (
     <Flex mt="90px" justifyContent="center">
       <Box
@@ -56,7 +56,7 @@ export const InformationSection = () => {
           spacing={4}
           align="stretch"
         >
-          <Notice />
+          <News />
         </VStack>
       </Box>
     </Flex>
