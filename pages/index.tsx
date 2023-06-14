@@ -7,7 +7,7 @@ import { CarCatalogSection } from "./components/CarCatalogSection";
 import { CarModelSection } from "./components/CarModelSection";
 import { CarMakerSection } from "./components/CarMakerSection";
 import { FreeWordSearch } from "./components/FreeWordSearch";
-import { InformationSection } from "./components/InformationSection";
+import { NewsSection } from "./components/NewsSection";
 import { Footer } from "./components/Footer";
 import { Copylight } from "./components/Copylight";
 
@@ -43,7 +43,7 @@ export default function Home() {
         </Flex>
       </Flex>
 
-      <InformationSection />
+      <NewsSection />
 
       <Footer />
 
