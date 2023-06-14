@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
-import { CarCarousel } from "./components/CarCarousel";
-import { Header } from "./components/Header";
+import { CarCarousel } from "../components/CarCarousel";
+import { Header } from "../components/Header";
 import { Flex } from "@chakra-ui/react";
-import { CarCatalogSection } from "./components/CarCatalogSection";
-import { CarModelSection } from "./components/CarModelSection";
-import { CarMakerSection } from "./components/CarMakerSection";
-import { FreeWordSearch } from "./components/FreeWordSearch";
-import { NewsSection } from "./components/NewsSection";
-import { Footer } from "./components/Footer";
-import { Copylight } from "./components/Copylight";
+import { CarCatalogSection } from "../components/CarCatalogSection";
+import { CarModelSection } from "../components/CarModelSection";
+import { CarMakerSection } from "../components/CarMakerSection";
+import { FreeWordSearch } from "../components/FreeWordSearch";
+import { NewsSection } from "../components/NewsSection";
+import { Footer } from "../components/Footer";
+import { Copylight } from "../components/Copylight";
 
 export default function Home() {
   return (
