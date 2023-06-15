@@ -1,6 +1,14 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
-import { Flex, Button, Box, Text, Image, Heading } from "@chakra-ui/react";
+import {
+  Flex,
+  Button,
+  Box,
+  Text,
+  Image,
+  Heading,
+  Link,
+} from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
@@ -156,7 +164,7 @@ export const CarCatalogSection = () => {
                         <Button
                           borderRadius=""
                           p="5px"
-                          m="0"
+                          m="1px"
                           w=""
                           h=""
                           bg="white"
@@ -184,21 +192,23 @@ export const CarCatalogSection = () => {
                       </Flex>
 
                       <Box textAlign="center" mt="10px" mb="10px">
-                        <Button
-                          bg="white"
-                          border="1px solid #2D2D2D"
-                          borderRadius="2px"
-                          fontWeight=""
-                          w="130px"
-                          h="30px"
-                          justifyContent="space-around"
-                          backgroundImage="/img/icon/arrowRightSlideButton.png"
-                          backgroundRepeat="no-repeat"
-                          backgroundPosition="95% 50%"
-                          backgroundSize="11px"
-                        >
-                          <Text fontSize="13px">詳細を見る</Text>
-                        </Button>
+                        <Link href={`/specification/${car.name}`}>
+                          <Button
+                            bg="white"
+                            border="1px solid #2D2D2D"
+                            borderRadius="2px"
+                            fontWeight=""
+                            w="130px"
+                            h="30px"
+                            justifyContent="space-around"
+                            backgroundImage="/img/icon/arrowRightSlideButton.png"
+                            backgroundRepeat="no-repeat"
+                            backgroundPosition="95% 50%"
+                            backgroundSize="11px"
+                          >
+                            <Text fontSize="13px">詳細を見る</Text>
+                          </Button>
+                        </Link>
                       </Box>
                     </Flex>
                   </SplideSlide>
