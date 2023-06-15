@@ -23,7 +23,7 @@ export const Footer = () => {
   return (
     <>
       <Flex mt="100px" justifyContent="flex-end">
-        <Image src="/img/icon/backToTop.png" onClick={backToTop} />
+        <Image src="/img/icon/backToTop.png" onClick={backToTop} cursor="pointer"/>
       </Flex>
       <Box bg="#51646C" p="10px">
         <Flex
