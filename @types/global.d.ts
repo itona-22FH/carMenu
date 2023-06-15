@@ -12,8 +12,8 @@ type CarCatalog = {
 type Car = {
   name: string;
   maker: string;
-  model: string;
   image: string;
+  model: string;
 };
 
 type CarImageProps = {
@@ -33,4 +33,9 @@ type SelectSearchProps = {
   optionValues: string[];
   bgFilter: string;
   textColor: string;
+};
+
+
+type LayoutProps = {
+  readonly children: ReactElement;
 };
