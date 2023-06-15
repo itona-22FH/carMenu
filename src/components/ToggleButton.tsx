@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../styles/toggleButton.module.scss";
+import styles from "../styles/toggleButton.module.scss";
 import { Flex, FormLabel } from "@chakra-ui/react";
 
 export const ToggleButton = ({ id, bgColor, labelColor }: ToggleButtonProps) => {

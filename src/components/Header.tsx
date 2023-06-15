@@ -3,11 +3,9 @@ import TestCarLogo from "../../public/tc-white-logo.svg";
 import {
   Box,
   Flex,
-  Img,
   Button,
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
