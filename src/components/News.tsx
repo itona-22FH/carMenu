@@ -21,7 +21,7 @@ export const News = () => {
       {noticeData.map((notice) => {
         return (
           <>
-            <Link href="/">
+            <Link href="/" style={{ textDecoration: "none" }}>
               <Flex
                 m="5px"
                 backgroundImage="/img/icon/arrowRight.png"
