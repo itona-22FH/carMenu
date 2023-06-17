@@ -46,37 +46,7 @@ export const CarCatalogSection = () => {
       name: "シティ",
       bookmark: false,
     },
-    {
-      image: "car1",
-      maker: "マツダ",
-      name: "CX-5 XD(4WD)",
-      bookmark: true,
-    },
-    {
-      image: "car2",
-      maker: "トヨタ",
-      name: "アルファードハイブリッド",
-      bookmark: false,
-    },
-    {
-      image: "car3",
-      maker: "トヨタ",
-      name: "ハリアー プレミアム",
-      bookmark: false,
-    },
-    {
-      image: "car4",
-      maker: "トヨタ",
-      name: "ハイラックスサーフ",
-      bookmark: true,
-    },
-    {
-      image: "car5",
-      maker: "ホンダ",
-      name: "シティ",
-      bookmark: false,
-    },
-  ]);
+      ]);
 
   const handleBookmark = (index: number) => {
     const newCarCatalog = carCatalogState.map((car, i) => {

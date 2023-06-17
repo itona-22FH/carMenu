@@ -9,6 +9,14 @@ type CarCatalog = {
   bookmark: boolean;
 };
 
+type CarSpecification = {
+  name: string;
+  maker: string;
+  image: string;
+  model: string;
+  displacement:string;
+}
+
 type Car = {
   name: string;
   maker: string;
