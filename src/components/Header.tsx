@@ -16,17 +16,42 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import { MenuItem } from "./MenuItem";
+import { useRouter } from "next/router";
 
 export const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = React.useRef();
+
+  const router = useRouter();
+  const { pathname } = router;
+
+  console.log(pathname);
 
   return (
     <Box h={{ base: "45px", md: "80px", lg: "100px" }} w="100%" bg="#38566B">
       <Flex h="100%" w="100%" justifyContent="space-between" pl="5px" pr="5px">
-        <Box w={{ base: "100px", md: "180px", lg: "230px" }} p="10px">
-          <TestCarLogo />
-        </Box>
+        {pathname === "/" ? (
+          <Box w={{ base: "100px", md: "180px", lg: "230px" }} p="10px">
+            <TestCarLogo />
+          </Box>
+        ) : (
+          <Flex alignItems="center">
+            <Link href="/" style={{ textDecoration: "none" }}>
+              <Button
+                colorScheme="linkedin"
+                variant="outline"
+                color="white"
+                fontSize={{ base: "3px", md: "15px" }}
+                m="0px"
+                p="0px"
+                w={{ base: "80px", md: "150px" }}
+                h={{ base: "25px", md: "40px" }}
+                ml={{ base: "5px", md: "20px", lg: "30px" }}
+              >
+                トップへ戻る
+              </Button>
+            </Link>
+          </Flex>
+        )}
         <Flex
           flexDirection="column"
           alignItems="flex-end"
